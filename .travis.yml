@@ -8,9 +8,7 @@ before_install:
 
     # help python importing cv and/or cv2
     - python -m pip install -U pip
-
-install:
-    - pip install python-opencv
+    - pip install opencv-python
 
 script:
     # finally run tests
