@@ -15,5 +15,3 @@ install:
 script:
     # finally run tests
     - python -c "import os; import numpy; import cv; import cv2; print(os.path.dirname(cv2.__file__))"
-virtualenv:
-    system_site_packages: true
