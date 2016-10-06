@@ -1,15 +1,13 @@
 language: python
-python:
-  - 3.5
 
 before_install:
-    # update aptitude
-    - sudo apt-get update
+ - sudo apt-get update
+ - sudo apt-get install python-opencv
+ - sudo dpkg -L python-opencv
+install:
+  # - "pip install --pre -r requirements.txt"
 
-    # help python importing cv and/or cv2
-    - python -m pip install -U pip
-    - pip install opencv-python
-
-script:
+python:
+  - "2.7"ript:
     # finally run tests
     - python -c "import os; import numpy; import cv2; print(os.path.dirname(cv2.__file__))"
