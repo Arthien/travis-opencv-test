@@ -2,7 +2,7 @@ language: python
 
 before_install:
  - sudo add-apt-repository ppa:orangain/opencv -y
- - sudo apt-get update -y
+ - sudo apt-get update
  - sudo apt-get install python3-opencv -y
 install:
   # - "pip install --pre -r requirements.txt"
