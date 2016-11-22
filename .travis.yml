@@ -11,3 +11,4 @@ python:
 script:
     # finally run tests
     - python -c "import os; import numpy; import cv2; print(os.path.dirname(cv2.__file__))"
+    - python -c "import os; import cv; print(os.path.dirname(cv.__file__))"
